@@ -5,8 +5,12 @@
 	<title></title>
 </head>
 <body>
+<div style="width: 100%;" align="center">
 <form>
-	<table>
+	<table border="1">
+		<tr>
+			<th colspan="2">FORM ĐĂNG KÝ</th>
+		</tr>
 		<tr>
 			<td>
 				이름
@@ -46,6 +50,7 @@
 			<td>
 				<input type="radio" name="gender">남
 				<input type="radio" name="gender">여
+				<input type="radio" name="gender">게이
 			</td>
 		</tr>
 		<tr>
@@ -64,18 +69,46 @@
 				<select>
 					<option>초급</option>
 					<option>중급</option>
-					<option>고급</option>
+					<option selected>고급</option>
 				</select>
 			</td>
 		</tr>
 		<tr>
+			<td>
+				사진
+			</td>
+			<td>
+				<input type="file" name="avatar">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				취미
+			</td>
+			<td>
+				<input type="checkbox" name="hobbie">영화
+				<input type="checkbox" name="hobbie">여행
+				<input type="checkbox" name="hobbie">먹기
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Mô tả thêm
+			</td>
+			<td>
+				<textarea></textarea>
+			</td>
+		</tr>
+		<tr>
 			<td colspan="2" align="center">
-				<input type="submit" name="submit">
+				<input type="submit" value="Đăng Ký" name="submit">
 				<input type="reset" name="reset" >
 				<input type="submit" name="reset" disabled="">
+				<button type="reset">Reset Xịn</button>
 			</td>
 		</tr>
 	</table>
 </form>
+</div>
 </body>
 </html>
